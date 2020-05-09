@@ -142,4 +142,28 @@ body {
   margin-bottom: 40px;
 }
 
+.link-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.link-wrapper .link-text {
+  margin-bottom: 0;
+  transition: all 0.2s ease;
+}
+.link-wrapper .link-highlight {
+  background-color: rgba(230, 60, 62, 0.3);
+  height: 5px;
+  position: absolute;
+  width: 100%;
+  bottom: 5px;
+  transition: all 0.2s ease;
+}
+.link-wrapper:hover .link-text {
+  color: white;
+}
+.link-wrapper:hover .link-highlight {
+  height: 20px;
+  background-color: rgba(230, 60, 62, 0.8);
+}
+
 /*# sourceMappingURL=app.css.map */

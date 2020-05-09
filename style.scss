@@ -5,6 +5,7 @@ $wine: #770f10;
 $brown: #83552d;
 $dust: #cab7ab;
 $text-dark: #310607;
+$heart-red: #e63c3e;
 
 body {
   font-family: 'Rubik', sans-serif;
@@ -57,7 +58,7 @@ body {
       font-size: 66px;
       
       .fa-heart {
-        color: #e63c3e;
+        color: $heart-red;
         opacity: 0.9;
         width: 70px;
         // animation: beating 1s infinite alternate;
@@ -184,4 +185,34 @@ body {
   text-align: center;
   font-size: 30px;
   margin-bottom: 40px;
+}
+
+.link-wrapper {
+  position: relative;
+  display: inline-block;
+
+  .link-text {
+    margin-bottom: 0;
+    transition: all 0.2s ease;
+  }
+
+  .link-highlight {
+    background-color: rgba($heart-red, 0.3);
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    transition: all 0.2s ease;
+  }
+
+  &:hover {
+    .link-text {
+      color: white;
+    }
+
+    .link-highlight {
+      height: 20px;
+      background-color: rgba($heart-red, 0.8);
+    }
+  }
 }

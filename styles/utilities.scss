@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Muli:wght@400;500;600;700&display=swap");
+
+$scarlet: #d44a1e;
+$blue: #068a9c;
+$wine: #770f10;
+$brown: #83552d;
+$dust: #cab7ab;
+$text-dark: #310607;
+$heart-red: #e63c3e;
+$textDark: #000000;
+$textMedium: #444;
+
+$themeGreen: #1e5850;
+
+body {
+  font-family: "Muli", sans-serif;
+  color: #0e1215;
+  // background-color: #f1f4f5;
+}
+
+.mainWrapper {
+  height: 100vh;
+  overflow: scroll;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// global styles
+.heading-style {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+// skills section
+.skillsSection {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: rgba($dust, 0.1);
+
+  .skills-flex {
+    justify-content: space-evenly;
+    font-size: 20px;
+
+    .skill-card {
+      box-shadow: 4px 4px 5px rgba(#efe5e5, 0.8),
+        -2px -2px 5px rgba(#efe5e5, 0.8);
+      padding: 12px 17px;
+      border-radius: 10px;
+    }
+
+    .fab {
+      font-size: 30px;
+      vertical-align: bottom;
+    }
+
+    .fa-html5 {
+      color: #e34f26;
+    }
+
+    .fa-css3-alt {
+      color: #264de4;
+    }
+
+    .fa-js-square {
+      color: #f7df1e;
+    }
+
+    .fa-sass {
+      color: #c69;
+    }
+
+    .fa-bootstrap {
+      color: #553c7b;
+    }
+
+    .fa-react {
+      color: #61dbfb;
+    }
+  }
+}

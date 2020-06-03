@@ -1,0 +1,27 @@
+// hero section
+.heroSection {
+  height: calc(100vh - 65px);
+  display: flex;
+  align-items: center;
+
+  @keyframes beating {
+    from {
+      font-size: 50px;
+    }
+    to {
+      font-size: 66px;
+    }
+  }
+
+  h1 {
+    color: $text-dark;
+    font-size: 66px;
+
+    .fa-heart {
+      color: $heart-red;
+      opacity: 0.9;
+      width: 70px;
+      // animation: beating 1s infinite alternate;
+    }
+  }
+}

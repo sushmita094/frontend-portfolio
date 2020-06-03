@@ -1,0 +1,28 @@
+// contact section
+.contactSection {
+  padding: 40px 0;
+  border-bottom: 5px solid $themeGreen;
+
+  .text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .social-icon {
+    margin: 0 10px;
+    font-size: 22px;
+    color: $themeGreen;
+  }
+
+  .link {
+    margin: 0 20px;
+    display: flex;
+    align-items: center;
+
+    .username {
+      color: $themeGreen;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

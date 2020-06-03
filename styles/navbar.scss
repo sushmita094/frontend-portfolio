@@ -1,0 +1,27 @@
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+
+  a {
+    color: black;
+  }
+
+  .navbar-brand {
+    font-size: 26px;
+    font-weight: 500;
+  }
+
+  .nav-item {
+    font-size: 20px;
+    margin-left: 10px;
+    font-weight: 700;
+
+    a {
+      color: #28756a;
+
+      &:hover {
+        color: $themeGreen;
+      }
+    }
+  }
+}

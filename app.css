@@ -124,8 +124,6 @@ body {
 
 .projectsSection {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
 }
 .projectsSection .projects-grid {
   display: grid;
@@ -154,6 +152,20 @@ body {
   background-color: #d44a1e;
   margin-left: 0;
   margin-top: 5px;
+}
+
+.workWrapper {
+  background-color: #04091f;
+}
+.workWrapper .project-card {
+  margin: 0 0 20px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.workWrapper .project-card .title {
+  color: #fbfbfc;
+}
+.workWrapper .project-card .desc {
+  color: #d2d3d7;
 }
 
 .contactSection {

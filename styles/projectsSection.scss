@@ -1,8 +1,6 @@
 // projects section
 .projectsSection {
   min-height: 100vh;
-  display: flex;
-  align-items: center;
 
   .projects-grid {
     display: grid;
@@ -35,6 +33,23 @@
       background-color: $scarlet;
       margin-left: 0;
       margin-top: 5px;
+    }
+  }
+}
+
+.workWrapper {
+  background-color: #04091f;
+
+  .project-card {
+    margin: 0 0 20px;
+    color: rgba(white, 0.6);
+
+    .title {
+      color: #fbfbfc;
+    }
+
+    .desc {
+      color: #d2d3d7;
     }
   }
 }
